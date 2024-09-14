@@ -1,0 +1,67 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+  color: #243B53;
+  background-color: #F0F4F8; /* beige background color */
+  text-align: center; /* align everything centrally */
+}
+
+input[type="text"] {
+  font-family: 'Source Code Pro', monospace;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+  margin: 20px auto; /* add margin to center the input field */
+}
+
+button {
+  font-family: 'Source Code Pro', monospace;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #38BEC9; /* sky blue button color */
+  color: #243B53;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF6B6B; /* lighter sky blue on hover */
+}
+
+#todos {
+  margin-top: 20px;
+  display: flex; /* use flexbox to center the todo items */
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo {
+  background-color: #ffffff;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(2, 2, 2, 0.1);
+  width: 50%; /* set width to 50% to center the todo items */
+  margin: 20px auto; /* add margin to center the todo items */
+}
+
+.todo h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.todo button {
+  /* float: right; */ /* remove float:right */
+  margin-top: 0; /* reset margin-top */
+  margin-right: 10px;
+  display: inline-block; /* make it an inline-block element */
+}
+
+/* add a new class to center the delete button on the next line */
+.todo button.next-line {
+  display: block; /* make it a block element */
+  text-align: center; /* center the button */
+  margin: 10px auto; /* add margin to center the button */
+}
